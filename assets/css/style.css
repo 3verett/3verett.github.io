@@ -101,7 +101,7 @@ nav {
     position: absolute;
     z-index: -1;
     inset: 2px;
-    background: linear-gradient(135deg, #000000 calc(100% - 11.5px), #560073 calc(100% - 11.5px));
+    background: linear-gradient(315deg, #560073 11.5px, #000000 11.5px);
     transition: background-color 0.15s ease;
 }
 
