@@ -34,6 +34,9 @@ body {
     background-color: #000000;
     color: #ffffff;
     margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
     /* make a grid to give cyberpunk net page style */
     background-image: radial-gradient(#560073 1.5px, transparent 1.5px); 
     background-size: 128px 128px;
@@ -49,6 +52,15 @@ header {
     padding: 2rem 1rem 1.75rem;
     border-bottom: 2px solid #560073;
     box-shadow: 0 4px 24px rgba(86, 0, 115, 0.7);
+}
+
+.siteContainer {
+    width: min(100vw, 133.333vh);
+    height: min(100vh, 75vw);
+    background-color: #000000;
+    background-image: radial-gradient(#560073 1.5px, transparent 1.5px);
+    background-size: 56px 56px;
+    overflow: auto;
 }
 
 .siteLogo {
