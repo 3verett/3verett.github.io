@@ -45,8 +45,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.25rem;
-    padding: 2rem 1rem 1.75rem;
+    gap: 0.83rem;
+    padding: 1rem 1rem 1.75rem;
     background: #000000;
 }
 
