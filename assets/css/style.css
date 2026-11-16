@@ -77,6 +77,8 @@ nav {
 }
 
 .navBar {
+    position: relative;
+    z-index: 1;
     font-family: "Play", sans-serif;
     font-size: clamp(0.95rem, 2.2vw, 1.1rem);
     /* bold weight */
@@ -85,16 +87,26 @@ nav {
     letter-spacing: 0.12em;
     text-decoration: none;
     color: #ffffff;
-    background-color: #000000;
-    border: 1px solid #560073;
-    border-left: 4px solid #560073;
-    padding: 0.55rem 1.35rem;
+    background-color: #560073;
+    padding: 0.55rem 1.5rem;
     /* gives nav buttons the classic cyberpunk 2077 sliced corner look */
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
-    transition: background-color 0.15s ease, color 0.15s ease;
+    transition: color 0.15s ease;
 }
 
-.navBar:hover {
+.navBar::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 1.5px;
+    right: 1.5px;
+    bottom: 1.5px;
+    left: 4px;
+    background-color: #000000;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 19px), calc(100% - 19px) 100%, 0 100%);
+    transition: background-color 0.15s ease;
+}
+
+.navBar:hover::before {
     background-color: #560073;
-    color: #ffffff;
 }
