@@ -82,17 +82,17 @@ nav {
     display: inline-block;
     z-index: 1;
     font-family: "Play", sans-serif;
-    font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+    font-size: clamp(0.8rem, 1.8vw, 0.95rem);
     /* bold weight */
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.10em;
     text-decoration: none;
     color: #ffffff;
     background-color: #560073;
-    padding: 0.55rem 1.5rem;
+    padding: 0.4rem 1.1rem;
     /* gives nav buttons the classic cyberpunk 2077 sliced corner look */
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
     transition: color 0.15s ease;
 }
 
