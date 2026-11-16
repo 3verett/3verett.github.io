@@ -25,6 +25,25 @@
     font-display: swap;
 }
 
+/* fixes centering for mobile support */
+@media (max-width: 600px) {
+    body {
+        display: block;
+        min-height: 100vh;
+    }
+
+    .siteContainer {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+    }
+
+    header { 
+        padding-top: 1rem;
+    }
+}
+
 /* reset padding as to not break width on mobile devices */
 *, *::before, *::after {
     box-sizing: border-box;
