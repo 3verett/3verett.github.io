@@ -78,10 +78,10 @@ header {
     
     /* dot texture on logo */
     background-image:
-        radial-gradient(circle, rgba(0, 0, 0, 0.5) 0.3px, transparent 1px),
+        radial-gradient(circle, rgba(0, 0, 0, 0.5) 0.2px, transparent 1px),
         linear-gradient(currentColor, currentColor);
 
-    background-size: 2px 2px, 100% 100%;
+    background-size: 1px 1px, 100% 100%;
     background-repeat: repeat, no-repeat;
 
     -webkit-background-clip: text;
@@ -94,10 +94,10 @@ header {
 
     /* dot texture on logo */
     background-image:
-        radial-gradient(circle, rgba(0, 0, 0, 0.35) 0.3px, transparent 1px),
+        radial-gradient(circle, rgba(0, 0, 0, 0.35) 0.2px, transparent 1px),
         linear-gradient(currentColor, currentColor);
 
-    background-size: 2px 2px, 100% 100%;
+    background-size: 1px 1px, 100% 100%;
     background-repeat: repeat, no-repeat;
 
     -webkit-background-clip: text;
