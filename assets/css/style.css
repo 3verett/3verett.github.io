@@ -72,10 +72,34 @@ header {
 .firstWord {
     color: #560073;
     text-shadow: 0 0 14px rgba(86, 0, 115, 0.7);
+    
+    /* dot texture on logo */
+    background-image:
+        radial-gradient(circle, rgba(0, 0, 0, 0.5) 0.8px, transparent 1px),
+        linear-gradient(currentColor, currentColor);
+
+    background-size: 4px 4px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .secondWord {
     color: #ffffff;
+
+    /* dot texture on logo */
+    background-image:
+        radial-gradient(circle, rgba(0, 0, 0, 0.35) 0.5px, transparent 1px),
+        linear-gradient(currentColor, currentColor);
+
+    background-size: 3px 3px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav {
