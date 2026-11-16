@@ -37,9 +37,6 @@ body {
     min-height: 100vh;
     display: grid;
     place-items: center;
-    /* make a grid to give cyberpunk net page style */
-    background-image: radial-gradient(#560073 1.5px, transparent 1.5px); 
-    background-size: 128px 128px;
     font-family: "Play", sans-serif;
     line-height: 1.6;
 }
@@ -57,8 +54,9 @@ header {
     width: min(100vw, 133.333vh);
     height: min(100vh, 75vw);
     background-color: #000000;
+    /* make a grid to give cyberpunk net page style */
     background-image: radial-gradient(#560073 1.5px, transparent 1.5px);
-    background-size: 56px 56px;
+    background-size: 88px 88px;
     overflow: auto;
 }
 
