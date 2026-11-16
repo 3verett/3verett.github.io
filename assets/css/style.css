@@ -54,12 +54,6 @@ header {
     width: min(100vw, 133.333vh);
     height: min(100vh, 75vw);
     background-color: #000000;
-    /* makes a grid to give cyberpunk net page style */
-    background-image:
-        radial-gradient(circle, #560073 1.5px, transparent 1.5px),
-        radial-gradient(circle, #560073 1.5px, transparent 1.5px);
-    background-size: 128px 128px;
-    background-position: 0 0, 64px 64px;
     overflow: auto;
 }
 
