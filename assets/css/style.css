@@ -101,7 +101,7 @@ nav {
     position: absolute;
     z-index: -1;
     inset: 2px;
-    background: linear-gradient(315deg, #560073 6.5px, #000000 6.5px);
+    background: linear-gradient(315deg, #560073 10.5px, #000000 10.5px);
 }
 
 .navBar:hover::before {
