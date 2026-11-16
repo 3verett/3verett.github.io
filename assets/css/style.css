@@ -119,7 +119,7 @@ nav {
     font-family: "Play", sans-serif;
     font-size: clamp(0.8125rem, 1.75vw, 1rem);
     /* bold weight */
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     text-decoration: none;
