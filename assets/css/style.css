@@ -1,4 +1,12 @@
-/* reset padding as to not break width */
+@font-face {
+    font-family: 'Warriot Tech';
+    src: url('../fonts/warriot-tech-font/WarriotTech-rvdRp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* reset padding as to not break width on mobile devices */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -19,6 +27,19 @@ header {
 }
 
 .siteLogo {
+    font-family: 'Warriot Tech', sans-serif;
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: #330047
+}
+
+.firstWord {
+    color: #330047
+}
+
+.secondWord {
+    color: #ededed
 }
 
 nav {
