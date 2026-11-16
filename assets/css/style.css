@@ -76,6 +76,7 @@ nav {
 }
 
 .navBar {
+    font-family: "Play", sans-serif;
     font-size: clamp(0.95rem, 2.2vw, 1.1rem);
     /* bold weight */
     font-weight: 700;
