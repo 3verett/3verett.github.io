@@ -147,7 +147,7 @@ nav {
     text-decoration: none;
     color: #ffffff;
     background-color: #560073;
-    padding: 0.2rem 0.9rem 0.2rem 0.5rem;
+    padding: 0.2rem 0.7rem;
     /* gives nav buttons the classic cyberpunk 2077 sliced corner look */
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
     transition: color 0.15s ease;
