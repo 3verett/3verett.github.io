@@ -130,7 +130,7 @@ nav {
     display: inline-block;
     z-index: 1;
     font-family: "Play", sans-serif;
-    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+    font-size: clamp(0.675rem, 1.4vw, 0.85rem);
     /* bold weight */
     font-weight: 400;
     text-transform: uppercase;
