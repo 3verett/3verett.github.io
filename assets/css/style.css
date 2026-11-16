@@ -1,7 +1,7 @@
 /* logo text font */
 @font-face {
     font-family: "Warriot Tech";
-    src: url("../fonts/warriot-tech-font/WarriotTech-rvdRp.ttf") format("truetype");
+    src: url("../fonts/warriot-tech-font/WarriotTechItalic-YqOoa.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -23,6 +23,25 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
+}
+
+/* fixes centering for mobile support */
+@media (max-width: 600px) {
+    body {
+        display: block;
+        min-height: 100vh;
+    }
+
+    .siteContainer {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+    }
+
+    header { 
+        padding-top: 1rem;
+    }
 }
 
 /* reset padding as to not break width on mobile devices */
@@ -70,14 +89,18 @@ header {
     color: #560073;
     text-shadow: 0 0 14px rgba(86, 0, 115, 0.7);
     
-    /* dot texture on logo */
+    /* scanline texture for logo */
     background-image:
-        radial-gradient(circle, rgba(0, 0, 0, 0.5) 0.2px, transparent 1px),
+        repeating-linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.30) 0px,
+            rgba(0, 0, 0, 0.30) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
         linear-gradient(currentColor, currentColor);
-
-    background-size: 2px 2px, 100% 100%;
-    background-repeat: repeat, no-repeat;
-
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -86,14 +109,18 @@ header {
 .secondWord {
     color: #ffffff;
 
-    /* dot texture on logo */
+    /* scanline texture for logo */
     background-image:
-        radial-gradient(circle, rgba(0, 0, 0, 0.35) 0.2px, transparent 1px),
+        repeating-linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.22) 0px,
+            rgba(0, 0, 0, 0.22) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
         linear-gradient(currentColor, currentColor);
-
-    background-size: 2px 2px, 100% 100%;
-    background-repeat: repeat, no-repeat;
-
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -111,17 +138,18 @@ nav {
     display: inline-block;
     z-index: 1;
     font-family: "Play", sans-serif;
-    font-size: clamp(0.775rem, 1.75vw, 1rem);
+    font-size: clamp(0.675rem, 1.4vw, 0.85rem);
     /* bold weight */
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: uppercase;  
     letter-spacing: 0.08em;
+    line-height: 1.3;
     text-decoration: none;
     color: #ffffff;
     background-color: #560073;
-    padding: 0.25rem 0.8rem;
+    padding: 0.2rem 0.7rem;
     /* gives nav buttons the classic cyberpunk 2077 sliced corner look */
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 11px), calc(100% - 11px) 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
     transition: color 0.15s ease;
 }
 
@@ -130,7 +158,7 @@ nav {
     position: absolute;
     z-index: -1;
     inset: 2px;
-    background: linear-gradient(315deg, #560073 10.5px, #000000 10.5px);
+    background: linear-gradient(315deg, #560073 6px, #000000 6px);
 }
 
 .navBar:hover::before {
