@@ -2,3 +2,12 @@
 layout: default
 title: Everett Guyea
 ---
+
+window.onSpotifyIframeApiReady = IFrameAPI => {
+  let element = document.getElementById('embed-iframe');
+  let options = {
+    uri: 'https://open.spotify.com/track/4ypL8lKeVlFe3ZJMLcYHzK?si=91758548ef244b94',
+  };
+  let callback = EmbedController => {};
+  IFrameAPI.createController(element, options, callback);
+};
