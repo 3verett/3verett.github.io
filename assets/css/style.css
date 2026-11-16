@@ -19,7 +19,7 @@
 /* for bolded text */
 @font-face {
     font-family: "Play";
-    src: url("../fonts/play-font/Play-Regular.ttf") format("truetype");
+    src: url("../fonts/play-font/Play-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
