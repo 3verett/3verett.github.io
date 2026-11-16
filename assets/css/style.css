@@ -92,7 +92,7 @@ nav {
     background-color: #560073;
     padding: 0.55rem 1.5rem;
     /* gives nav buttons the classic cyberpunk 2077 sliced corner look */
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
     transition: color 0.15s ease;
 }
 
@@ -100,15 +100,11 @@ nav {
     content: "";
     position: absolute;
     z-index: -1;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
-    left: 2px;
-    background-color: #000000;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%);
+    inset: 2px;
+    background: linear-gradient(135deg, #000000 calc(100% - 11.5px), #560073 calc(100% - 11.5px));
     transition: background-color 0.15s ease;
 }
 
 .navBar:hover::before {
-    background-color: #560073;
+    background: #560073;
 }
