@@ -144,8 +144,9 @@
 
             </svg>
 
-            <div class="stickyHeader">
-                <div class="siteContainer">
+            <div class="siteContainer">
+
+                <div class="stickyHeader">
                     <!-- adds a browser bar to imitate cyberpunk 2077 browser -->
                     <div class="browserBar">
                         <span class="browserBrand">
@@ -160,6 +161,7 @@
                             POWERED BY <span class=netwatch>NETWATCH</span>
                         </span>
                     </div>
+                    
                     <header>
                         <a href="{{ '/' | relative_url }}" class="siteLogo">
                             <span class="firstWord">Everett</span>
@@ -173,11 +175,11 @@
                         </nav>
 
                     </header>
-
-                    <main>
-                        {{ content }}
-                    </main>
                 </div>
+
+                <main>
+                    {{ content }}
+                </main>
             </div>
 
         </div>
