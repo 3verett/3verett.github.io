@@ -270,7 +270,7 @@ nav {
         0 0 10px #000000;
 }
 
-.monitorAttribution:hover {
+.backgroundAttribution:hover {
     color: #45dfe8;
     text-decoration: underline;
 }
