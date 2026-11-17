@@ -87,7 +87,7 @@ body::before {
     content: "";
     position: fixed;
     inset: clamp(10px, 1.5vw, 24px);
-    z-index: 1000;
+    z-index: 0;
     pointer-events: none;
     border: 6px solid #a77b2c;
     border-radius: 28px;
@@ -111,6 +111,7 @@ header {
     width: min(100vw, 133.333vh);
     height: min(100vh, 75vw);
     position: relative;
+    z-index: 1;
     background-color: #000000;
     overflow: auto;
     /* cyberpunk 2077 browser border */
@@ -153,7 +154,6 @@ header {
 
 .secondWord {
     color: #ffffff;
-
     /* scanline texture for logo */
     background-image:
         repeating-linear-gradient(
