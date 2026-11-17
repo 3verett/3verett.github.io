@@ -90,8 +90,8 @@ main {
 }
 
 .firstWord {
-    color: #560073;
-    text-shadow: 0 0 14px rgba(86, 0, 115, 0.7);
+    color: #fa36e3;
+    text-shadow: 0 0 14px rgba(250, 54, 227, 0.7);
     
     /* scanline texture for logo */
     background-image:
@@ -149,7 +149,7 @@ nav {
     line-height: 1.3;
     text-decoration: none;
     color: #ffffff;
-    background-color: #560073;
+    background-color: #fa36e3;
     padding: 0.2rem 0.7rem;
     /* gives nav buttons the classic cyberpunk 2077 sliced corner look */
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
@@ -161,11 +161,11 @@ nav {
     position: absolute;
     z-index: -1;
     inset: 2px;
-    background: linear-gradient(315deg, #560073 6px, #000000 6px);
+    background: linear-gradient(315deg, #fa36e3 6px, #000000 6px);
 }
 
 .navBar:hover::before {
-    background: #560073;
+    background: #fa36e3;
 }
 
 .spotify-embed {
