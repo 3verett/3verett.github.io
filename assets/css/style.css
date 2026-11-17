@@ -266,6 +266,40 @@ nav {
         0 0 0 1px rgba(59, 214, 223, 0.22),
         0 0 14px rgba(59, 214, 223, 0.12),
         inset 0 0 18px rgba(18, 143, 150, 0.07);
+    /* changes scroll bar to match site aesthetic (firefox) */
+    scrollbar-width: thin;
+    scrollbar-color: #238b91 #030509;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* changes scroll bar to match site aesthetic (opera, chrome, etc.) */
+.siteContainer::-webkit-scrollbar {
+    width: 10px;
+}
+
+.siteContainer::-webkit-scrollbar-track {
+    background: #030509;
+    border-left: 1px solid rgba(59, 214, 223, 0.2);
+}
+
+.siteContainer::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        180deg,
+        #45dfe8,
+        #12666c
+    );
+
+    border: 2px solid #030509;
+    border-radius: 2px;
+}
+
+.siteContainer::-webkit-scrollbar-thumb:hover {
+    background: #69f5ff;
+}
+
+.siteContainer::-webkit-scrollbar-corner {
+    background: #030509;
 }
 
 /* fixes styling for mobile support */
