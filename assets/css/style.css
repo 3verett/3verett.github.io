@@ -32,6 +32,12 @@
         min-height: 100vh;
     }
 
+    body::before {
+        inset: 5px;
+        border-width: 3px;
+        border-radius: 14px;
+    }
+
     .siteContainer {
         width: 100%;
         height: auto;
@@ -39,8 +45,19 @@
         overflow: visible;
     }
 
+    .browserBar {
+        grid-template-columns: max-content minmax(0, 1fr);
+        gap: 0.4rem;
+        padding: 0.4rem 0.55rem;
+    }
+
+    .browserStatus {
+        display: none;
+    }
+
     header { 
         padding-top: 1rem;
+        background: transparent;
     }
 }
 
@@ -65,6 +82,22 @@ body {
     line-height: 1.6;
 }
 
+/* cyberpunk 2077 computer frame */
+body::before {
+    content: "";
+    position: fixed;
+    inset: clamp(10px, 1.5vw, 24px);
+    z-index: 1000;
+    pointer-events: none;
+    border: 6px solid #a77b2c;
+    border-radius: 28px;
+    box-shadow:
+        0 0 0 2px #2c210e,
+        0 0 0 5px #604719,
+        inset 0 0 0 2px rgba(255, 226, 157, 0.18),
+        0 0 18px rgba(190, 145, 58, 0.28);
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -77,8 +110,15 @@ header {
 .siteContainer {
     width: min(100vw, 133.333vh);
     height: min(100vh, 75vw);
+    position: relative;
     background-color: #000000;
     overflow: auto;
+    /* cyberpunk 2077 browser border */
+    border: 1px solid #3bd6df;
+    box-shadow:
+        0 0 0 1px rgba(59, 214, 223, 0.22),
+        0 0 14px rgba(59, 214, 223, 0.12),
+        inset 0 0 18px rgba(18, 143, 150, 0.07);
 }
 
 .siteLogo {
@@ -174,4 +214,48 @@ nav {
     width: 100%;
     max-width: 456px;
     margin: 1rem auto;
+}
+
+/* cyberpunk 2077 browser toolbar */
+.browserBar {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr) max-content;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 40px;
+    padding: 0.45rem 0.8rem;
+    background: linear-gradient(
+        90deg,
+        #073638,
+        #0b4b4b
+    );
+    border-bottom: 1px solid #45dfe8;
+    color: #a5fff0;
+    font-size: clamp(0.56rem, 0.8vw, 0.75rem);
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+}
+
+.browserBrand {
+    white-space: nowrap;
+    color: #b5fff3;
+}
+
+.browserAddress {
+    min-width: 0;
+    padding: 0.3rem 0.65rem;
+    background: rgba(0, 0, 0, 0.23);
+    border: 1px solid rgba(78, 218, 224, 0.3);
+    color: #94e9df;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.browserStatus {
+    color: #5ebfc1;
+    font-size: 0.58rem;
+    white-space: nowrap;
 }
