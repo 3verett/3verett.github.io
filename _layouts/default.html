@@ -144,38 +144,40 @@
 
             </svg>
 
-            <div class="siteContainer">
-                <!-- adds a browser bar to imitate cyberpunk 2077 browser -->
-                <div class="browserBar">
-                    <span class="browserBrand">
-                        &#8962; <span class="keystone">KEYSTONE</span>
-                    </span>
+            <div class="siteChrome">
+                <div class="siteContainer">
+                    <!-- adds a browser bar to imitate cyberpunk 2077 browser -->
+                    <div class="browserBar">
+                        <span class="browserBrand">
+                            &#8962; <span class="keystone">KEYSTONE</span>
+                        </span>
 
-                    <span class="browserAddress">
-                        NETDIR://3VERETT.GITHUB.IO{{ page.url | relative_url | upcase }}
-                    </span>
+                        <span class="browserAddress">
+                            NETDIR://3VERETT.GITHUB.IO{{ page.url | relative_url | upcase }}
+                        </span>
 
-                    <span class="browserStatus">    
-                        POWERED BY <span class=netwatch>NETWATCH</span>
-                    </span>
+                        <span class="browserStatus">    
+                            POWERED BY <span class=netwatch>NETWATCH</span>
+                        </span>
+                    </div>
+                    <header>
+                        <a href="{{ '/' | relative_url }}" class="siteLogo">
+                            <span class="firstWord">Everett</span>
+                            <span class="secondWord">Guyea</span>
+                        </a>
+                        
+                        <nav>
+                            <a href="{{ '/experience/' | relative_url }}" class="navBar">Experience</a>
+                            <a href="{{ '/projects/' | relative_url }}" class="navBar">Projects</a>
+                            <a href="{{ '/contact/' | relative_url }}" class="navBar">Contact</a>
+                        </nav>
+
+                    </header>
+
+                    <main>
+                        {{ content }}
+                    </main>
                 </div>
-                <header>
-                    <a href="{{ '/' | relative_url }}" class="siteLogo">
-                        <span class="firstWord">Everett</span>
-                        <span class="secondWord">Guyea</span>
-                    </a>
-                    
-                    <nav>
-                        <a href="{{ '/experience/' | relative_url }}" class="navBar">Experience</a>
-                        <a href="{{ '/projects/' | relative_url }}" class="navBar">Projects</a>
-                        <a href="{{ '/contact/' | relative_url }}" class="navBar">Contact</a>
-                    </nav>
-
-                </header>
-
-                <main>
-                    {{ content }}
-                </main>
             </div>
 
         </div>

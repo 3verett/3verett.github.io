@@ -227,6 +227,14 @@ nav {
     font-family: "Warriot Tech";
 }
 
+/* keeps the browser bar, logo, and nav buttons visible on scroll */
+.siteChrome {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #030509;
+}
+
 .monitorFrame {
     width: 100%;
     height: 100%;
