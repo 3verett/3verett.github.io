@@ -310,3 +310,16 @@ nav {
         background: transparent;
     }
 }
+
+/* hides yellow border on 4:3 screens */
+@media (min-aspect-ratio: 5/4) and (max-aspect-ratio: 3/2) {
+    .monitorBezel {
+        display: none;
+    }
+    
+    .siteContainer {
+        width: min(100%, calc(100dvh * 4 / 3));
+        aspect-ratio: 4 / 3;
+        height: auto;
+    }
+}
