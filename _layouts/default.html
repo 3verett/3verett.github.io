@@ -9,47 +9,176 @@
         <!-- fixes flickering issue with logo font loading -->
         <link
             rel="preload"
-            href="../fonts/warriot-tech-font/WarriotTechItalic-YqOoa.ttf"
+            href="{{ '/assets/fonts/warriot-tech-font/WarriotTechItalic-YqOoa.ttf' | relative_url }}"
             as="font"
             type="font/ttf"
             crossorigin
         >
+        <link
+            rel="preload"
+            href="{{ '/assets/fonts/warriot-tech-font/WarriotTech-rvdRp.ttf' | relative_url }}"
+            as="font"
+            type="font/ttf"
+            crossorigin
+        >
+        
     </head>
 
     <body>
-        <div class="siteContainer">
-            <!-- adds a browser bar to imitate cyberpunk 2077 browser -->
-            <div class="browserBar">
-                <span class="browserBrand">
-                    &#8962; <span class="keystone">KEYSTONE</span>
-                </span>
+        <div class="monitorFrame">
 
-                <span class="browserAddress">
-                    NETDIR://3VERETT.GITHUB.IO
-                </span>
+            <svg class="monitorBezel"
+                viewBox="0 0 1600 760"
+                preserveAspectRatio="none"
+                aria-hidden="true">
 
-                <span class="browserStatus">    
-                    POWERED BY <span class=netwatch>NETWATCH</span>
-                </span>
+                <defs>
+                    <linearGradient id="bezelGold" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#d7b45e"/>
+                        <stop offset="35%" stop-color="#95702b"/>
+                        <stop offset="65%" stop-color="#b88b35"/>
+                        <stop offset="100%" stop-color="#76531d"/>
+                    </linearGradient>
+
+                    <filter id="bezelGlow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="5" result="blur"/>
+                        <feMerge>
+                            <feMergeNode in="blur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <path
+                    d="M 55 110
+                    C 55 75, 82 48, 118 48
+                    L 220 48
+                    C 250 48, 265 70, 292 70
+                    L 1308 70
+                    C 1335 70, 1350 48, 1380 48
+                    L 1482 48
+                    C 1518 48, 1545 75, 1545 110
+                    L 1545 140
+                    C 1545 164, 1522 176, 1522 202
+                    L 1522 558
+                    C 1522 584, 1545 596, 1545 620
+                    L 1545 650
+                    C 1545 685, 1518 712, 1482 712
+                    L 1380 712
+                    C 1350 712, 1335 690, 1308 690
+                    L 292 690
+                    C 265 690, 250 712, 220 712
+                    L 118 712
+                    C 82 712, 55 685, 55 650
+                    L 55 620
+                    C 55 596, 78 584, 78 558
+                    L 78 202
+                    C 78 176, 55 164, 55 140 Z"
+                    fill="#030604"
+                    stroke="#35250c"
+                    stroke-width="24"
+                />
+
+                <path
+                    d="M 55 110
+                    C 55 75, 82 48, 118 48
+                    L 220 48
+                    C 250 48, 265 70, 292 70
+                    L 1308 70
+                    C 1335 70, 1350 48, 1380 48
+                    L 1482 48
+                    C 1518 48, 1545 75, 1545 110
+                    L 1545 140
+                    C 1545 164, 1522 176, 1522 202
+                    L 1522 558
+                    C 1522 584, 1545 596, 1545 620
+                    L 1545 650
+                    C 1545 685, 1518 712, 1482 712
+                    L 1380 712
+                    C 1350 712, 1335 690, 1308 690
+                    L 292 690
+                    C 265 690, 250 712, 220 712
+                    L 118 712
+                    C 82 712, 55 685, 55 650
+                    L 55 620
+                    C 55 596, 78 584, 78 558
+                    L 78 202
+                    C 78 176, 55 164, 55 140 Z"
+                    fill="none"
+                    stroke="url(#bezelGold)"
+                    stroke-width="9"
+                    filter="url(#bezelGlow)"
+                />
+
+                <path
+                    d="M 55 110
+                    C 55 75, 82 48, 118 48
+                    L 220 48
+                    C 250 48, 265 70, 292 70
+                    L 1308 70
+                    C 1335 70, 1350 48, 1380 48
+                    L 1482 48
+                    C 1518 48, 1545 75, 1545 110
+                    L 1545 140
+                    C 1545 164, 1522 176, 1522 202
+                    L 1522 558
+                    C 1522 584, 1545 596, 1545 620
+                    L 1545 650
+                    C 1545 685, 1518 712, 1482 712
+                    L 1380 712
+                    C 1350 712, 1335 690, 1308 690
+                    L 292 690
+                    C 265 690, 250 712, 220 712
+                    L 118 712
+                    C 82 712, 55 685, 55 650
+                    L 55 620
+                    C 55 596, 78 584, 78 558
+                    L 78 202
+                    C 78 176, 55 164, 55 140 Z"
+                    fill="none"
+                    stroke="#f4d48a"
+                    stroke-width="1.5"
+                    opacity="0.4"
+                />
+
+            </svg>
+
+            <div class="siteContainer">
+                <!-- adds a browser bar to imitate cyberpunk 2077 browser -->
+                <div class="browserBar">
+                    <span class="browserBrand">
+                        &#8962; <span class="keystone">KEYSTONE</span>
+                    </span>
+
+                    <span class="browserAddress">
+                        NETDIR://3VERETT.GITHUB.IO
+                    </span>
+
+                    <span class="browserStatus">    
+                        POWERED BY <span class=netwatch>NETWATCH</span>
+                    </span>
+                </div>
+                <header>
+                    <a href="{{ '/' | relative_url }}" class="siteLogo">
+                        <span class="firstWord">Everett</span>
+                        <span class="secondWord">Guyea</span>
+                    </a>
+                    
+                    <nav>
+                        <a href="{{ '/about-me.html' | relative_url }}" class="navBar">About Me</a>
+                        <a href="{{ '/projects.html' | relative_url }}" class="navBar">Projects</a>
+                        <a href="{{ '/contact.html' | relative_url }}" class="navBar">Contact</a>
+                    </nav>
+
+                </header>
+
+                <main>
+                    {{ content }}
+                </main>
             </div>
-            <header>
-                <a href="/" class="siteLogo">
-                    <span class="firstWord">Everett</span>
-                    <span class="secondWord">Guyea</span>
-                </a>
-                
-                <nav>
-                    <a href="/about-me.html" class="navBar">About Me</a>
-                    <a href="/projects.html" class="navBar">Projects</a>
-                    <a href="/contact.html" class="navBar">Contact</a>
-                </nav>
 
-            </header>
-
-            <main>
-                {{ content }}
-            </main>
         </div>
+
     </body>
 
 </html>
