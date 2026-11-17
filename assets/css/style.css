@@ -244,7 +244,7 @@ nav {
 .siteContainer {
     position: relative;
     z-index: 1;
-    width: min(68%, calc(86dvh * 4 / 3));
+    width: min(68%, calc(82dvh * 4 / 3));
     aspect-ratio: 4 / 3;
     height: auto;
     background-color: #030509;
