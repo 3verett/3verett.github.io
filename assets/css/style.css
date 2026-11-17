@@ -214,8 +214,9 @@ nav {
 }
 
 .monitorFrame {
-    width: 100vw;
-    height: 100vw;
+    width: min(100vw, calc(92vh * 2.105263));
+    aspect-ratio: 1600 / 760;
+    height: auto;
     position: relative;
     isolation: isolate;
     display: grid;
@@ -234,7 +235,7 @@ nav {
 .siteContainer {
     position: relative;
     z-index: 1;
-    width: min(68%, 94vh);
+    width: min(58%, calc(64vh * 4 / 3));
     aspect-ratio: 4 / 3;
     height: auto;
     background-color: #030907;
