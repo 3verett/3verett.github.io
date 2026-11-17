@@ -95,7 +95,7 @@ body::before {
     content: "";
     position: fixed;
     inset: clamp(10px, 1.5vw, 24px);
-    z-index: 2;
+    z-index: 0;
     pointer-events: none;
     border: 6px solid #a77b2c;
     border-radius: 28px;
@@ -116,9 +116,11 @@ header {
 }
 
 .siteContainer {
-    width: min(100vw, 133.333vh);
-    height: min(100vh, 75vw);
+    width: min(calc(100vw - 120px), calc((100vh - 120px) * 4 / 3));
+    aspect-ratio: 4/3;
+    height: auto;
     position: relative;
+    z-index: 1;
     background-color: #000000;
     overflow: auto;
     /* cyberpunk 2077 browser border */
@@ -230,7 +232,6 @@ nav {
     grid-template-columns: max-content minmax(0, 1fr) max-content;
     align-items: center;
     position: relative;
-    z-index: 3;
     gap: 0.75rem;
     min-height: 40px;
     padding: 0.45rem 0.8rem;
