@@ -214,8 +214,8 @@ nav {
 }
 
 .monitorFrame {
-    width: min(96vw, 190vh);
-    height: min(82vh, 48vw);
+    width: 100vw;
+    height: 100vw;
     position: relative;
     isolation: isolate;
     display: grid;
@@ -237,7 +237,6 @@ nav {
     width: min(68%, 94vh);
     aspect-ratio: 4 / 3;
     height: auto;
-    max-height: calc(100% - 100px);
     background-color: #030907;
     overflow: auto;
     border: 1px solid #3bd6df;
