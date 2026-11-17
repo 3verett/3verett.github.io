@@ -72,7 +72,7 @@ header {
     align-items: center;
     gap: 0.83rem;
     padding: 1rem 1rem 1.75rem;
-    background: #030907;
+    background: #030509;
 }
 
 .siteLogo {
@@ -247,7 +247,7 @@ nav {
     width: min(58%, calc(80dvh * 4 / 3));
     aspect-ratio: 4 / 3;
     height: auto;
-    background-color: #030907;
+    background-color: #030509;
     overflow: auto;
     border: 1px solid #3bd6df;
     box-shadow:
