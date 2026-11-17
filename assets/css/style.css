@@ -253,6 +253,28 @@ nav {
     pointer-events: none;
 }
 
+.backgroundAttribution {
+    position: absolute;
+    right: 6%;
+    bottom: 10%;
+    z-index: 2;
+    max-width: 22%;
+    color: #a5fff0;
+    font-size: clamp(0.48rem, 0.72vw, 0.68rem);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: right;
+    text-decoration: none;
+    text-shadow:
+        0 0 5px #000000,
+        0 0 10px #000000;
+}
+
+.monitorAttribution:hover {
+    color: #45dfe8;
+    text-decoration: underline;
+}
+
 .siteContainer {
     position: relative;
     z-index: 1;
@@ -321,7 +343,7 @@ nav {
 
     main {
     padding: 0.35rem 1rem 2rem;
-}
+    }
 
     .monitorFrame {
         display: block;
@@ -331,6 +353,10 @@ nav {
     }
 
     .monitorBezel {
+        display: none;
+    }
+
+    .monitorAttribution {
         display: none;
     }
 
@@ -364,6 +390,10 @@ nav {
 /* hides yellow border on 4:3 screens */
 @media (min-aspect-ratio: 5/4) and (max-aspect-ratio: 3/2) {
     .monitorBezel {
+        display: none;
+    }
+
+    .monitorAttribution {
         display: none;
     }
     

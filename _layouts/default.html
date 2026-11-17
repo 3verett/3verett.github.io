@@ -48,7 +48,49 @@
                             <feMergeNode in="SourceGraphic"/>
                         </feMerge>
                     </filter>
+
+                    <!-- monitor shape definition so background stays inside it -->
+                    <path id="monitorShape"
+                        d="M 55 110
+                        C 55 75, 82 48, 118 48
+                        L 220 48
+                        C 250 48, 265 70, 292 70
+                        L 1308 70
+                        C 1335 70, 1350 48, 1380 48
+                        L 1482 48
+                        C 1518 48, 1545 75, 1545 110
+                        L 1545 140
+                        C 1545 164, 1522 176, 1522 202
+                        L 1522 558
+                        C 1522 584, 1545 596, 1545 620
+                        L 1545 650
+                        C 1545 685, 1518 712, 1482 712
+                        L 1380 712
+                        C 1350 712, 1335 690, 1308 690
+                        L 292 690
+                        C 265 690, 250 712, 220 712
+                        L 118 712
+                        C 82 712, 55 685, 55 650
+                        L 55 620
+                        C 55 596, 78 584, 78 558
+                        L 78 202
+                        C 78 176, 55 164, 55 140 Z"
+                    />
+                    <clipPath id="monitorBackgroundClip">
+                        <use href="#monitorShape"/>
+                    </clipPath>
                 </defs>
+
+                <!-- background image -->
+                <image
+                    href="{{ '/assets/images/background.jpg' | relative_url }}"
+                    x="0"
+                    y="0"
+                    width="1600"
+                    height="760"
+                    preserveAspectRatio="xMidYMid slice"
+                    clip-path="url(#monitorBackgroundClip)"
+                />
 
                 <path
                     d="M 55 110
@@ -75,9 +117,12 @@
                     C 55 596, 78 584, 78 558
                     L 78 202
                     C 78 176, 55 164, 55 140 Z"
-                    fill="#030509"
-                    stroke="#35250c"
-                    stroke-width="24"
+                    <use
+                        href="#monitorShape"
+                        fill="none"
+                        stroke="#35250c"
+                        stroke-width="24"
+                    />
                 />
 
                 <path
@@ -143,6 +188,15 @@
                 />
 
             </svg>
+
+            <a
+                class="backgroundAttribution"
+                href="https://www.magnific.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Background designed by GarryKillian - Magnific.com
+            </a>
 
             <div class="siteContainer">
 
