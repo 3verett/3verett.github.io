@@ -80,6 +80,8 @@ h1 {
 }
 
 body {
+    position: relative;
+    isolation: isolate;
     background-color: #000000;
     color: #ffffff;
     margin: 0;
@@ -94,16 +96,88 @@ body {
 body::before {
     content: "";
     position: fixed;
-    inset: clamp(10px, 1.5vw, 24px);
+    inset: 14px;
     z-index: 0;
     pointer-events: none;
-    border: 6px solid #a77b2c;
-    border-radius: 28px;
-    box-shadow:
-        0 0 0 2px #2c210e,
-        0 0 0 5px #604719,
-        inset 0 0 0 2px rgba(255, 226, 157, 0.18),
-        0 0 18px rgba(190, 145, 58, 0.28);
+     background: linear-gradient(
+        135deg,
+        #d6ad53 0%,
+        #76551f 20%,
+        #c69a40 40%,
+        #654919 60%,
+        #d9b45e 80%,
+        #886224 100%
+    );
+    clip-path: polygon(
+        0 10%,
+        1.5% 10%,
+        3% 7%,
+        8% 7%,
+        9.5% 8.5%,
+        90.5% 8.5%,
+        92% 7%,
+        97% 7%,
+        98.5% 10%,
+        100% 10%,
+        100% 14%,
+        98.5% 17%,
+        98.5% 83%,
+        100% 86%,
+        100% 90%,
+        98.5% 90%,
+        97% 93%,
+        92% 93%,
+        90.5% 91.5%,
+        9.5% 91.5%,
+        8% 93%,
+        3% 93%,
+        1.5% 90%,
+        0 90%,
+        0 86%,
+        1.5% 83%,
+        1.5% 17%,
+        0 14%
+    );
+    filter: drop-shadow(0 0 5px rgba(190, 145, 58, 0.4))
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 22px;
+    z-index: 0;
+    pointer-events: none;
+    background: #020403;
+    clip-path: polygon(
+        0 10%,
+        1.5% 10%,
+        3% 7%,
+        8% 7%,
+        9.5% 8.5%,
+        90.5% 8.5%,
+        92% 7%,
+        97% 7%,
+        98.5% 10%,
+        100% 10%,
+        100% 14%,
+        98.5% 17%,
+        98.5% 83%,
+        100% 86%,
+        100% 90%,
+        98.5% 90%,
+        97% 93%,
+        92% 93%,
+        90.5% 91.5%,
+        9.5% 91.5%,
+        8% 93%,
+        3% 93%,
+        1.5% 90%,
+        0 90%,
+        0 86%,
+        1.5% 83%,
+        1.5% 17%,
+        0 14%
+    );
 }
 
 header {
