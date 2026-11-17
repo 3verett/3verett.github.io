@@ -108,6 +108,12 @@ header {
     height: min(100vh, 75vw);
     background-color: #000000;
     overflow: auto;
+    /* browser boarder */
+    border: 2px solid #42dce5;
+    /* glow and inner highlight */
+    box-shadow:
+        0 0 5px rgba(66, 220, 229, 0.45),
+        inset 0 0 0 1px rgba(66, 220, 229, 0.2);
 }
 
 .siteLogo {
