@@ -49,6 +49,11 @@
     box-sizing: border-box;
 }
 
+h1 {
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+}
+
 body {
     background-color: #000000;
     color: #ffffff;
