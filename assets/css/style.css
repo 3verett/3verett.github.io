@@ -43,6 +43,12 @@ h1 {
     margin-top: 0.4rem;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     position: relative;
     isolation: isolate;
@@ -55,7 +61,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     display: grid;
-    place-items: center;
+    place-items: stretch;
     font-family: "Play", sans-serif;
     line-height: 1.6;
 }
@@ -218,10 +224,8 @@ nav {
 }
 
 .monitorFrame {
-    width: min(100%, calc(100dvh * 2.105263));
-    aspect-ratio: 1600 / 760;
-    height: auto;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     position: relative;
     isolation: isolate;
     display: grid;
@@ -262,6 +266,7 @@ nav {
 
     body {
         display: block;
+        width: 100%;
         height: auto;
         min-height: 100vh;
         overflow-x: hidden;
