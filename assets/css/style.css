@@ -39,8 +39,8 @@
 }
 
 h1 {
-    margin-bottom: 0.2rem;
-    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+    margin-top: 0.4rem;
 }
 
 html {
@@ -71,12 +71,12 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 0.83rem;
-    padding: 1rem 1rem 1.75rem;
+    padding: 1rem 1rem 0.35rem;
     background: #030509;
 }
 
 main {
-    padding: 1.25rem clamp(1.25rem, 3vw, 2.5rem) 2rem;
+    padding: 0.25rem clamp(1.25rem, 3vw, 2.5rem) 2rem;
 }
 
 .siteLogo {
@@ -320,7 +320,7 @@ nav {
     }
 
     main {
-    padding: 1rem;
+    padding: 0.35rem 1rem 2rem;
 }
 
     .monitorFrame {
