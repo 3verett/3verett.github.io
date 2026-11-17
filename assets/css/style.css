@@ -291,9 +291,8 @@ nav {
         max-height: none;
         aspect-ratio: auto;
         overflow: visible;
-
-        border: 3px solid #a77b2c;
-        border-radius: 18px;
+        border: 1px solid #3bd6df;
+        border-radius: 0;
     }
 
     .browserBar {
