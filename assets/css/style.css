@@ -255,16 +255,18 @@ nav {
 
 .backgroundAttribution {
     position: absolute;
-    right: 6%;
-    bottom: 10%;
+    left: 50%;
+    bottom: 0.35rem;
+    transform: translateX(-50%);
     z-index: 2;
-    max-width: 22%;
+    max-width: 90%;
     color: #a5fff0;
     font-size: clamp(0.48rem, 0.72vw, 0.68rem);
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: right;
+    text-align: center;
     text-decoration: none;
+    white-space: nowrap;
     text-shadow:
         0 0 5px #000000,
         0 0 10px #000000;
